@@ -11,8 +11,8 @@ export const NavBar = () => {
     document.body.style.overflow = open ? "auto" : "hidden";
   };
   return (
-    <header className="shadow-md w-full fixed top-0 left-0 ">
-      <nav className="md:flex bg-white items-center justify-between py-4 px-7 md:px-10 ">
+    <header className="shadow-md w-full fixed top-0 left-0 z-30   ">
+      <nav className="md:flex bg-white items-center justify-between padding-x py-8 ">
         <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800 ">
           <a href="/">
             <img src={headerLogo} alt="Logo" width={130} height={29} />
@@ -25,7 +25,7 @@ export const NavBar = () => {
           <ion-icon name={open ? "close" : "menu-outline"}></ion-icon>
         </div>
         <ul
-          className={`md:flex md:items-center pb-12 padding-l md:pl-0 md:pb-0 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full h-screen md:h-auto md:w-auto transition-all duration-500 ease-in flex-1 justify-center items-center gap-12 lg:gap-16 ${
+          className={`md:flex md:items-center pb-12 padding-l md:pl-0 md:pb-0 absolute md:static bg-blue md:z-auto z-[-1] left-0 w-full h-screen md:h-auto md:w-auto transition-all duration-500 ease-in flex-1 justify-center items-center gap-12 lg:gap-16 ${
             open ? "top-[65px]" : "top-[-490px]"
           }`}
         >
