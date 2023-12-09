@@ -13,7 +13,7 @@ export const Hero = () => {
       id="home"
       className="w-full flex flex-col gap-10 max-container xl:flex-row justify-center min-h-[calc(100vh-65px)]"
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-20">
         <p className="text-xl font-montserrat text-coral-red ">
           Our Summer collections
         </p>
