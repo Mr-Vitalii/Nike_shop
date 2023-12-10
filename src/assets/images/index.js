@@ -16,6 +16,9 @@ import shoe7 from './shoe7.svg'
 import shoe8 from './shoe8.svg'
 
 
+import offer from './offer.svg'
+
+
 export {
     headerLogo,
     bigShoe1,
@@ -32,4 +35,6 @@ export {
     shoe6,
     shoe7,
     shoe8,
+
+    offer
 }
