@@ -11,9 +11,9 @@ export const NavBar = () => {
     document.body.style.overflow = open ? "auto" : "hidden";
   };
   return (
-    <header className="shadow-md w-full fixed top-0 left-0 z-30   ">
+    <header className="shadow-md w-full fixed top-0 left-0 z-30">
       <nav className="md:flex bg-white items-center justify-between padding-x py-8 ">
-        <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800 ">
+        <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800">
           <a href="/">
             <img src={headerLogo} alt="Logo" width={130} height={29} />
           </a>
@@ -25,8 +25,8 @@ export const NavBar = () => {
           <ion-icon name={open ? "close" : "menu-outline"}></ion-icon>
         </div>
         <ul
-          className={`md:flex md:items-center pb-12 padding-l md:pl-0 md:pb-0 absolute md:static bg-blue md:z-auto z-[-1] left-0 w-full h-screen md:h-auto md:w-auto transition-all duration-500 ease-in flex-1 justify-center items-center gap-12 lg:gap-16 ${
-            open ? "top-[65px]" : "top-[-490px]"
+          className={`bg-white pb-12 pt-5 left-0 w-full absolute z-[-1] transition-all duration-500 ease-in flex flex-col items-center md:pt-0 md:gap-12 md:flex-row md:justify-start sm:items-start sm:padding-l md:pl-0 md:pb-0 md:static md:z-auto md:h-auto md:w-auto lg:gap-16 ${
+            open ? "top-[95px]" : "top-[-790px]"
           }`}
         >
           {navLinks.map((link) => (
@@ -34,6 +34,7 @@ export const NavBar = () => {
               <a
                 href={link.href}
                 className="font-montserrat leading-normal text-lg text-slate-gray hover:text-red-500 duration-500"
+                onClick={toggleMenu}
               >
                 {link.label}
               </a>
