@@ -1,6 +1,6 @@
 
 import { bigShoe1, bigShoe2, bigShoe3, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3, shoe4, shoe5, shoe6, shoe7, customer1, customer2 } from "../assets/images";
-import { shieldTick, support, truckFast } from "../assets/icons";
+import { shieldTick, support, truckFast, facebook, instagram, twitter } from "../assets/icons";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -87,3 +87,39 @@ export const reviews = [
     }
 ];
 
+export const socialMedia = [
+    { src: facebook, alt: "facebook logo", link: "https://www.facebook.com/" },
+    { src: twitter, alt: "twitter logo", link: "https://twitter.com/" },
+    { src: instagram, alt: "instagram logo", link: "https://www.instagram.com/" },
+];
+
+export const footerLinks = [
+    {
+        title: "Products",
+        links: [
+            { name: "Air Force 1", link: "/" },
+            { name: "Air Max 1", link: "/" },
+            { name: "Air Jordan 1", link: "/" },
+            { name: "Air Force 2", link: "/" },
+            { name: "Nike Waffle Racer", link: "/" },
+            { name: "Nike Cortez", link: "/" },
+        ],
+    },
+    {
+        title: "Help",
+        links: [
+            { name: "About us", link: "/" },
+            { name: "FAQs", link: "/" },
+            { name: "How it works", link: "/" },
+            { name: "Privacy policy", link: "/" },
+            { name: "Payment policy", link: "/" },
+        ],
+    },
+    {
+        title: "Get in touch",
+        links: [
+            { name: "vittalii.lawyer@gmail.com", link: "mailto:vittalii.lawyer@gmail.com" },
+            { name: "+380957788999", link: "tel:+380957788999" },
+        ],
+    },
+];
